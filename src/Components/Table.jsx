@@ -11,6 +11,7 @@ import {
   TableContainer,
   Text,
   Box,
+  Flex,
   Image,
 } from "@chakra-ui/react";
 
@@ -57,14 +58,20 @@ const TradingTable = ({ data }) => {
             {data.slice(0, displayedRows).map((el) => (
               <Tr textAlign={"center"}>
                 <Td textAlign={"center"}>
-                  <Text overflow={"hidden"} textOverflow="ellipsis">
-                    {el.symbol}
-                  </Text>
+                  <Flex
+                    alignItems={"center"}
+                    overflow={"hidden"}
+                    gap={4}
+                    textOverflow="ellipsis"
+                  >
+                    <Image w={"24px"} src={el.image} alt={""} />
+                    <Text fontWeight={"semibold"}>{el.name}</Text>
+                  </Flex>
                 </Td>
                 <Td textAlign={"center"}>{el.bidPrice}</Td>
-                <Td textAlign={"center"}>₹ {el.currentSpread}</Td>
+                <Td textAlign={"center"}>{el.current_price}</Td>
                 <Td textAlign={"center"}>{el.askPrice}</Td>
-                <Td textAlign={"center"}>{el.dateTime}</Td>
+                <Td textAlign={"center"}>{el.last_updated}</Td>
                 <Td textAlign={"center"}>{el.leverage}</Td>
               </Tr>
             ))}
@@ -84,14 +91,4 @@ const TradingTable = ({ data }) => {
   );
 };
 
-export default TradingTable ;
-
-// method:
-//       "https://octacdn.net/assets/pic/banks-svg/local-banks.svg?fd46756e07e29f4973538ab92e8058c6eec2c5ad",
-//     name: "India Case",
-//     min: "500000.00 INR",
-//     commission: "Free",
-//     rate: "Available",
-//     time: "1-3 Hours",
-//     status: "Make A Deposit",
-//   },
+export default TradingTable;

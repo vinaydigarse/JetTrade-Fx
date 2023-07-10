@@ -51,9 +51,9 @@ export default function Community() {
     <Box maxW="7xl" mx={"auto"} pt={5} px={{ base: 2, sm: 12, md: 17 }}>
       <chakra.h1
         textAlign={"center"}
-        fontSize={"4xl"}
         py={10}
         fontWeight={"bold"}
+        fontSize={{ base: "2xl", md: "3xl" }}
       >
         <Text>Learn and earn.</Text>
         <Text>We've got it covered.</Text>

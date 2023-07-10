@@ -7,9 +7,6 @@ import {
   Text,
   Divider,
   HStack,
-  Tag,
-  Wrap,
-  WrapItem,
   useColorModeValue,
   Container,
   Button,
@@ -17,20 +14,6 @@ import {
 import Community from "./Community";
 import WhyJetTrade from "../../Components/WhyJetTrade";
 import Started from "../../Components/Started";
-
-const BlogTags = (props) => {
-  return (
-    <HStack spacing={2} marginTop={props.marginTop}>
-      {props.tags.map((tag) => {
-        return (
-          <Tag size={"md"} variant="solid" colorScheme="orange" key={tag}>
-            {tag}
-          </Tag>
-        );
-      })}
-    </HStack>
-  );
-};
 
 export const BlogAuthor = (props) => {
   return (
@@ -50,8 +33,14 @@ export const BlogAuthor = (props) => {
 
 const LandingPage = () => {
   return (
-    <Container maxW={"7xl"} p="12">
-      <Heading as="h1">Welcome to JetTrade-Fx</Heading>
+    <Container maxW={"7xl"} pt={4} >
+      <Heading
+        fontSize={{ base: "2xl", md: "3xl" }}
+        textAlign={"center"}
+        as="h1"
+      >
+        Welcome to JetTrade-Fx
+      </Heading>
       <Box
         marginTop={{ base: "1", sm: "5" }}
         display="flex"

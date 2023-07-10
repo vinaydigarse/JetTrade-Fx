@@ -99,7 +99,7 @@ const Deposite = () => {
 
         <Flex direction={"column"} m={10} textAlign={"left"}>
           <Text fontSize={30} mb={4}>
-            “Stay Focused, Stay Driven” — FXTRADING.com
+            “Stay Focused, Stay Driven” — JetTrade-Fx
           </Text>
           <Text mb={4}>
             Do you know the cost of trading is one of the key factors to trading

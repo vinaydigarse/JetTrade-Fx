@@ -8,18 +8,14 @@ import {
   AccordionItem,
   AccordionPanel,
   Box,
-  Flex,
   Heading,
   Image,
-  Img,
   SimpleGrid,
   Stat,
   StatLabel,
-  StatNumber,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { BsArrowRight } from "react-icons/bs";
 
 const About = () => {
   return (
@@ -130,7 +126,7 @@ export default About;
 function StatsCard(props) {
   const isDarkMode = useColorModeValue(false, true);
 
-  const { title, stat, img } = props;
+  const { title,  img } = props;
   return (
     <Stat
       px={{ base: 4, md: 8 }}

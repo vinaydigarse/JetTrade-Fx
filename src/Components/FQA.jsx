@@ -6,7 +6,6 @@ import {
   AccordionPanel,
   Box,
   Heading,
-  Text,
   useColorModeValue,
 } from "@chakra-ui/react";
 

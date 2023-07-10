@@ -14,11 +14,9 @@ import {
   FiHeadphones,
   FiMessageSquare,
   FiPhoneCall,
-  FiVoicemail,
 } from "react-icons/fi";
-import { BiMailSend, BiSolidContact, BiSolidPhoneCall } from "react-icons/bi";
+import { BiMailSend, BiSolidContact } from "react-icons/bi";
 import React from "react";
-import { color } from "framer-motion";
 
 const Contact = () => {
   return (

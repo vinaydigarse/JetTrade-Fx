@@ -1,4 +1,3 @@
-import { useState } from "react";
 
 import {
   Table,
@@ -12,7 +11,6 @@ import {
   Box,
   Image,
   Flex,
-  Text,
   Tooltip,
 } from "@chakra-ui/react";
 

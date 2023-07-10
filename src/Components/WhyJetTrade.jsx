@@ -16,6 +16,7 @@ function StatsCard(props) {
     <Stat
       px={{ base: 4, md: 8 }}
       py={"5"}
+      h={{base: "xs" }}
       textAlign={"start"}
       shadow={"md"}
       //   border={ "none" ,"1px solid"}
@@ -44,9 +45,9 @@ export default function WhyJetTrade() {
       px={{ base: 2, sm: 18, md: 17 }}
     >
       <chakra.h1
-        textAlign={{ base: "left", md: "center" }}
-        fontSize={"4xl"}
+        fontSize={{ base: "2xl", md: "3xl" }}
         py={12}
+        textAlign={"center"}
         fontWeight={"bold"}
       >
         Why Do People Choose JetTrade-Fx?
